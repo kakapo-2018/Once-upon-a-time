@@ -1,0 +1,14 @@
+.all{
+  display: flex;
+  flex-direction: column;
+}
+
+.sideplusstory{
+  display: flex;
+  flex-direction: row;
+}
+
+.storyboard{
+  display: flex;
+  flex-direction: column;
+}
