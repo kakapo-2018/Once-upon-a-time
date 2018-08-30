@@ -13,10 +13,10 @@ class Storyboard extends React.Component{
 
         this.render(){
             return(
-                <div className='storyboard'>
+                <div className="storyboard">
                 
                     <img src={this.state.image}/>
-                    <div className='story'>
+                    <div className="story">
                         <p>{this.state.content}</p>
                     </div>
                 
