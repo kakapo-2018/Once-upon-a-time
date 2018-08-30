@@ -5,13 +5,14 @@ import {Link} from 'react-router-dom'
 const Sidebar = () => {
     return (
         <div className="storyboard">
-            <h2>Testing Sidebar</h2>
+            <h2>Chapter Selection</h2>
             <ul>
-                
+                <li key="intro"><Link to={`/chapter/intro`}>Intro</Link></li>
                 {Object.keys(stories).map(chapter => {
-          
-                    
-                    return <li key={chapter}><Link to={`/chapter/${chapter}`}>Chapter {chapter.name} -></Link></li>
+                    if(chapter == 'Intro'){
+                        return
+                    }
+                    return <li key={chapter}><Link to={`/chapter/${chapter}`}>Chapter {chapter} -></Link></li>
                 })}
             </ul>    
         </div>
