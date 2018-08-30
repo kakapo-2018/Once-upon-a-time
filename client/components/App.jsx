@@ -9,9 +9,11 @@ const App = () => (
       <Router>
         <div>
       <Route path="/" component={Nav}/>
-       
+      <Route exact path="/chapter/:story" render={props => {
+              return <Storyboard {...props }/>
+            }}/>
         <Sidebar/>
-        <Storyboard/>
+        {/* <Storyboard/> */}
       </div>
       </Router>
     </div>
