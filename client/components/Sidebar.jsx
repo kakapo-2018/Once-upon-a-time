@@ -7,8 +7,11 @@ const Sidebar = () => {
         <div className="storyboard">
             <h2>Testing Sidebar</h2>
             <ul>
+                
                 {Object.keys(stories).map(chapter => {
-                    return <li key={chapter}><Link to={`/list/${chapter}`}>Chapter {chapter} -></Link></li>
+          
+                    
+                    return <li key={chapter}><Link to={`/chapter/${chapter}`}>Chapter {chapter.name} -></Link></li>
                 })}
             </ul>    
         </div>
