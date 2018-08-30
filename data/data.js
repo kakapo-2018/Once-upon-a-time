@@ -1,5 +1,5 @@
 const stories = {
-  Intro:[
+  intro:[
     {
       chapter: 0,
       name: 'Introduction',

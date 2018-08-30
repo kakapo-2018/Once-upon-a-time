@@ -12,7 +12,7 @@ const Sidebar = () => {
                     if(chapter == 'Intro'){
                         return
                     }
-                    return <li key={chapter}><Link to={`/chapter/${chapter}`}>Chapter {chapter} -></Link></li>
+                    return <li key={chapter}><Link to={`/chapter/${chapter}`} replace>Chapter {chapter} -></Link></li>
                 })}
             </ul>    
         </div>

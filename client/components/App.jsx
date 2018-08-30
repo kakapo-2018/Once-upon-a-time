@@ -3,7 +3,6 @@ import {HashRouter as Router, Route} from 'react-router-dom';
 import Nav from './Nav'
 import Sidebar from './Sidebar'
 import Storyboard from './Storyboard'
-import SoundComp from './SoundComp'
 
 class App extends React.Component {
   render(){
@@ -12,7 +11,7 @@ class App extends React.Component {
       <Router>
         <div>
       <Route path="/" component={Nav}/>
-      <Route exact path="/chapter/:story" render={props => {
+      <Route  path="/chapter/:story" render={props => {
               return <Storyboard {...props }/>
             }}/>
         <Sidebar/>
