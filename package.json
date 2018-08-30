@@ -28,11 +28,7 @@
     "heroku-cli": "^7.0.9",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-<<<<<<< HEAD
-    "react-sound": "^1.2.0",
-=======
     "react-router-dom": "^4.3.1",
->>>>>>> 426602955b24ecdd530deb0854ae51484ed7b6f3
     "webpack": "^3.10.0"
   },
   "devDependencies": {}

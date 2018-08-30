@@ -1,22 +1,23 @@
 import React from 'react'
+import data from '../../data/data'
 
 class Storyboard extends React.Component{
     constructor(props){
-        // we are expecting content and image to be passed
+        // we are expecting keys to JSON
         super(props)
 
         this.state = {
-            content: "",
-            image: ""
+            content: data.this.props.match.params.story[0].content,
+            image: data.this.props.match.params.story[0].image
         }
 
         this.render(){
             return(
                 <div className='storyboard'>
                 
-                    <img src={image}/>
+                    <img src={this.state.image}/>
                     <div className='story'>
-                        <p>{content}</p>
+                        <p>{this.state.content}</p>
                     </div>
                 
                 </div>

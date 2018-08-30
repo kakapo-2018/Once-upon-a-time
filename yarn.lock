@@ -3871,11 +3871,7 @@ promise@^7.1.1:
   dependencies:
     asap "~2.0.3"
 
-<<<<<<< HEAD
-prop-types@^15.5.7, prop-types@^15.6.0:
-=======
 prop-types@^15.6.0, prop-types@^15.6.1:
->>>>>>> 426602955b24ecdd530deb0854ae51484ed7b6f3
   version "15.6.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.6.2.tgz#05d5ca77b4453e985d60fc7ff8c859094a497102"
   dependencies:
@@ -3998,14 +3994,6 @@ react-dom@^16.2.0:
     object-assign "^4.1.1"
     prop-types "^15.6.0"
 
-<<<<<<< HEAD
-react-sound@^1.2.0:
-  version "1.2.0"
-  resolved "https://registry.yarnpkg.com/react-sound/-/react-sound-1.2.0.tgz#1bb7e1ec8494ecc57b03dbdecd1496b10f6541f2"
-  dependencies:
-    prop-types "^15.5.7"
-    soundmanager2 "^2.97.20170602"
-=======
 react-router-dom@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/react-router-dom/-/react-router-dom-4.3.1.tgz#4c2619fc24c4fa87c9fd18f4fb4a43fe63fbd5c6"
@@ -4028,7 +4016,6 @@ react-router@^4.3.1:
     path-to-regexp "^1.7.0"
     prop-types "^15.6.1"
     warning "^4.0.1"
->>>>>>> 426602955b24ecdd530deb0854ae51484ed7b6f3
 
 react@^16.2.0:
   version "16.4.2"
