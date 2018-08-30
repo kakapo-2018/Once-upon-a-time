@@ -7,12 +7,12 @@ const Sidebar = () => {
         <div className="storyboard">
             <h2>Chapter Selection</h2>
             <ul>
-                <li key="intro"><Link to={`/chapter/intro`}>Intro</Link></li>
+                <li key="intro"><Link to={`/chapter/intro`} replace>Intro</Link></li>
                 {Object.keys(stories).map(chapter => {
-                    if(chapter == 'Intro'){
+                    if(chapter == 'intro'){
                         return
                     }
-                    return <li key={chapter}><Link to={`/chapter/${chapter}`}>Chapter {chapter} -></Link></li>
+                    return <li key={chapter}><Link to={`/chapter/${chapter}`} replace>Chapter {chapter} -></Link></li>
                 })}
             </ul>    
         </div>

@@ -4,12 +4,14 @@ import Nav from './Nav'
 import Sidebar from './Sidebar'
 import Storyboard from './Storyboard'
 
-const App = () => (
+class App extends React.Component {
+  render(){
+    return (
     <div>
       <Router>
         <div>
       <Route path="/" component={Nav}/>
-      <Route exact path="/chapter/:story" render={props => {
+      <Route  path="/chapter/:story" render={props => {
               return <Storyboard {...props }/>
             }}/>
         <Sidebar/>
@@ -17,7 +19,9 @@ const App = () => (
       </div>
       </Router>
     </div>
-  )
+    )
+  }
+}
 
 
 export default App
