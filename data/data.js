@@ -1,19 +1,22 @@
 const stories = {
-  story:[
+  1:[
     {
       chapter: 1,
       name: 'Introduction story',
       content: `I'm the stories content`,
       image: './images/img.png',
       sound: './sounds/sound1.wav'
-    },
+    }],
+    2: [
     {
       chapter: 2,
       name: 'Chapter two',
       content: `I'm the stories content`,
       image: './images/img.png',
       sound: './sounds/soundtwo.wav'
-    },
+    }
+    ],
+    3: [
     {
       chapter: 3,
       name: 'Chapter three',
@@ -24,4 +27,4 @@ const stories = {
   ]
 }
 
-export default story
+export default stories

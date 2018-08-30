@@ -1,8 +1,17 @@
 import React from 'react'
+import stories from '../../data/data'
+import {Link} from 'react-router-dom'
 
-const Sidebar = props => {
+const Sidebar = () => {
     return (
-        <h2>Sidebar</h2>
+        <div className="storyboard">
+            <h2>Testing Sidebar</h2>
+            <ul>
+                {Object.keys(stories).map(chapter => {
+                    return <li key={chapter}><Link to={`/list/${chapter}`}>Chapter {chapter} -></Link></li>
+                })}
+            </ul>    
+        </div>
     )
 }
 
