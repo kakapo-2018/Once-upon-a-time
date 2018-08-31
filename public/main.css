@@ -53,3 +53,7 @@ a {
 #emil {
   max-height: 190px;
 }
+
+strong{
+  cursor: -webkit-grab;
+}
