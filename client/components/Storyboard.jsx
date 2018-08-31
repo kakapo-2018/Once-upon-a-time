@@ -1,75 +1,35 @@
 import React from 'react'
 import data from '../../data/data'
 
-// class Storyboard extends React.Component{
-//     constructor(props){
-//         // we are expecting keys to JSON
-//         super(props)
-
-//         let placing = this.props.match.params.story;
-
-//         this.state={
-//             content: "",
-//             image: ""
-//         }
-
-    
-
-//         // this.reset = this.reset.bind(this)
-
-//         this.componentDidMount(){
-//             this.setState({
-//                 content: data[placing][0].content,
-//                 image: data[placing][0].image
-//             })
-//         }
-//     }
-
-//     // reset(placing){
-//     //     let para = data[placing][0].content
-//     //     let img = data[placing][0].image
-
-//     //     this.setState({
-//     //         content: para,
-//     //         image: img
-//     //     })
-        
-//     // }
-        
-//         render(){
-//             return(
-//                 <div className="storyboard">
-                
-//                     <img src={this.state.image}/>
-//                     <div className="story">
-//                         <p>{this.state.content}</p>
-//                     </div>
-                
-//                 </div>
-//             )
-//         }
-//     }
-
 const Storyboard = props => {
 
     let placing = props.match.params.story
     let img = data[placing][0].image
     let content = data[placing][0].content
-
-
+    let subtitle = data[placing][0].subtitle
     console.log(`image: ${img} and content: ${content}`);
     
     return(
-<div className="storyboard">
-                
-                <img src={img}/>
-                   <div className="story">
-                       <p>{content}</p>
-                   </div>
-                
-               </div>
-    )
+            <div className="storyboard">
+                <div className="tile is-ancestor">
+                    <div className="tile is-vertical is-12">
+                        <div className="tile">
+                            <div className="tile is-parent">
+                                <article id="bg" className="tile is-child notification is-info">
+                                <p className="title">Chapter {placing} </p>
+                                <p className="subtitle">{subtitle}</p>
+                                <figure className="image is-5by3">
+                                <img src={img}/>
+                                
+                                </figure>
+                                <p className="subtitle">{content}</p>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        )
 }
-
 
 export default Storyboard

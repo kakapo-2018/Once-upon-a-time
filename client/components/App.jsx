@@ -10,12 +10,17 @@ class App extends React.Component {
     <div>
       <Router>
         <div>
+          <div>
       <Route path="/" component={Nav}/>
+        </div>
+        <div className="sideplusstory">
+        <Sidebar/>
+      <div className="storyboard">
       <Route  path="/chapter/:story" render={props => {
               return <Storyboard {...props }/>
             }}/>
-        <Sidebar/>
-        {/* <Storyboard/> */}
+        </div>
+        </div>
       </div>
       </Router>
     </div>
